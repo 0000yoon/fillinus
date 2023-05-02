@@ -1,15 +1,60 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function Main(){
-    return(
-        <Container sx = {{ bgcolor: '#f23fe3', height: 'auto' }}>
-            <Typography variant="h1" component="h2">
-                main 
-                </Typography>
+    const slideBanner = {
+        // dot: true,
+        // infinite: true,
+        // speed: 500,
+        // slidesToShow: 1,
+        // slidesToScroll: 1,
+        dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay:true
+      };
+    
+      return (
+        <Container sx={{ bgcolor: "#dcdcdc", height: "auto", padding:3 }}>
+    
+          {/* <Typography variant="h1" component="h2">
+            main
+          </Typography> */}
+    
+          <Slider {...slideBanner}>
+            <div>
+              <img src="https://s.pstatic.net/static/www/mobile/edit/20230328_1095/upload_1679982124122x0mBM.png" />
+            </div>
+            <div>
+              <img src="https://s.pstatic.net/static/www/mobile/edit/20230405_1095/upload_16806811709957knt3.jpeg" />
+            </div>
+            <div>
+              <img src="https://s.pstatic.net/static/www/mobile/edit/20230404_1095/upload_1680583275230UKDAh.jpg" />
+            </div>
+            <div>
+              <img src="https://s.pstatic.net/static/www/mobile/edit/20230406_1095/upload_1680763385576rKHaq.png" />
+            </div>
+            <div>
+              <img src="https://s.pstatic.net/static/www/mobile/edit/20230330_1095/upload_1680168288271OjmUj.png" />
+            </div>
+          </Slider>
+          
+    
+    
+          <Container sx={{ bgcolor: "#dcdcdc", height: "auto" }}>
+            "ddd"
+          </Container>
+    
         </Container>
-    );
+        
+    
+      );
 }
 
 export default Main;
