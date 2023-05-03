@@ -5,7 +5,7 @@ import * as React from 'react';
 
 import Header from './components/Header';
 import Main from './components/Main';
-import BottomActionBar from './components/BottomActionBar';
+import BottomNavi from './components/BottomNavi';
 
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
       <Main>
       </Main>
         
-      <BottomActionBar>
-      </BottomActionBar>
+      <BottomNavi>
+      </BottomNavi>
     </div>
   );
 }
