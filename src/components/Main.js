@@ -29,7 +29,7 @@ function Main(){
            
 
             < div BestReview sx={{ bgcolor: "#dcdcdc", height: "auto", padding:10 }}>
-              <BestPrd></BestPrd>
+              <BestReview></BestReview>
             </div>
 
             < div NewPrd sx={{ bgcolor: "#dcdcdc", height: "auto", padding:10 }}>
