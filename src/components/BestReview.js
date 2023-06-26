@@ -73,7 +73,7 @@ const slideBanner = {
     centerPadding: "1%",
     arrows: false,
     dots: false,
-    slidesToShow: 3,
+    slidesToShow: 5,
     swipeToSlide: true,
     afterChange: function(index) {
       console.log(
@@ -86,7 +86,9 @@ const slideBanner = {
 function BestReview() {
     return(
         <div>
-    
+    <div style={{ textAlign: "light", color: "#FF71A4" }}>
+        <h1> Best 리뷰</h1>
+      </div>
        
     
           {/*<Slider {...slideBanner}>*/}
@@ -181,6 +183,7 @@ function BestReview() {
                     </CardContent>
                 </Card>
             </div>
+            
 
           </Slider>
 

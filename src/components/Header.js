@@ -9,8 +9,7 @@ function Header(){
     return(
         <Container sx={{ bgcolor: "#f1f1f1", height: "auto", padding:3 }}>
       <div style={{ textAlign: "center", color: "#FF71A4" }}>
-
-        <h1>FiLLiN</h1>
+        <img src = "img/logo_text.png" alt="textlogo"></img>
       </div>
 
       <center>
@@ -23,13 +22,14 @@ function Header(){
             width: 400,
           }}
         >
-          <IconButton>
-            <SearchIcon>"searchicon"</SearchIcon>
-          </IconButton>
+          
           <InputBase sx={{ ml: 1, flex: 1 }}
             placeholder = "검색어를 입력해주세요" inputProps=
             {{ "aria-label": "검색어입력ㄱㄱㄱ" }}>
           </InputBase>
+          <IconButton>
+            <SearchIcon>"searchicon"</SearchIcon>
+          </IconButton>
 
           {/* <IconButton sx={{ p: '10px' }} aria-label="menu">
         <MenuIcon />
