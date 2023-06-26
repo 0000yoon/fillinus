@@ -4,11 +4,15 @@ import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
+import { useMediaQuery } from 'react-responsive';
 
 function Header(){
+
+  const isPortrait  = useMediaQuery({ query: "(min-width: 1000px)" });
+
     return(
         <Container sx={{ bgcolor: "#f1f1f1", height: "auto", padding:3 }}>
-      <div style={{ textAlign: "center", color: "#FF71A4" }}>
+      <div style={{ textAlign: "center", color: "#FF71A4" }}>{isPortrait ? "YES" : "NO"} 
         <img src = "img/logo_text.png" alt="textlogo"></img>
       </div>
 
