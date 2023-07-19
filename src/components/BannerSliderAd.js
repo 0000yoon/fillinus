@@ -5,6 +5,7 @@ import Container from '@mui/material/Container';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { WidthFull } from '@mui/icons-material';
 
 const slideBanner = {
     // dot: true,
@@ -17,7 +18,8 @@ const slideBanner = {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay:true
+      autoplay:true,
+      WidthFull
   };
 
 function BannerSliderAd() {
@@ -28,7 +30,7 @@ function BannerSliderAd() {
     
           <Slider {...slideBanner}>
             <div>
-              <img src="https://s.pstatic.net/static/www/mobile/edit/20230328_1095/upload_1679982124122x0mBM.png" />
+              <img src="https://ssl.pstatic.net/melona/libs/1456/1456783/6af610cbc9d725776b41_20230718114454816.jpg" />
             </div>
             <div>
               <img src="https://s.pstatic.net/static/www/mobile/edit/20230405_1095/upload_16806811709957knt3.jpeg" />

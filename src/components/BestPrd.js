@@ -12,7 +12,11 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
-
+// Roboto Font CDN
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+/>
 
 const slideBanner = {
 
@@ -87,23 +91,23 @@ const slideBanner = {
 function BestPrd() {
     return(
         <div>
-    <div style={{ textAlign: "light", color: "#FF71A4" }}>
-        <h1> Best 상품</h1>
-      </div>
+            <div style={{ textAlign: "light", color: "#111111" }}>
+                <h1> Best 상품</h1>
+            </div>
        
     
           {/*<Slider {...slideBanner}>*/}
           <Slider {...settings}>
             <div>
-                <Card sx={{ maxWidth: 345 }} variant="outlined">
+                <Card sx={{ maxWidth: 400, maxHeight: 400 }} variant="outlined">
                     <CardMedia
                         component="img"
-                        height="146"
+                        // height="146"
                         image="https://s.pstatic.net/shop.phinf/20230403_24/1680487990899OXkus_JPEG/EC9980EC9DB4EB939C.jpg"
                         alt="Paella dish"
                     />
                     <IconButton aria-label="add to favorites" style={{ position: 'absolute', display: 'flex', alignItems: 'center', top: '0px'}}>
-                        <FavoriteIcon fontSize="large" color="warning" />
+                        <FavoriteIcon fontSize="large" color="#FF71A4" />
                     </IconButton>
                     <CardContent>
                         <Typography fontSize="1.2rem" variant="bestprd_title" color="text.secondary">

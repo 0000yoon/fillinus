@@ -11,7 +11,7 @@ function Header(){
   const isPortrait  = useMediaQuery({ query: "(min-width: 1000px)" });
 
     return(
-        <Container sx={{ bgcolor: "#f1f1f1", height: "auto", padding:3 }}>
+        <Container sx={{ textAlign: "center", padding:3 }}>
       <div style={{ textAlign: "center", color: "#FF71A4" }}>{isPortrait ? "YES" : "NO"} 
         <img src = "img/logo_text.png" alt="textlogo"></img>
       </div>
@@ -20,10 +20,12 @@ function Header(){
         <Paper
           component="form"
           sx={{
-            p: "2px 4px",
+            // p: "2px 4px",
             display: "flex",
             alignItems: "center",
             width: 400,
+            bgcolor: "#f5f5f5",
+            boxShadow: 0,
           }}
         >
           
